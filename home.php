@@ -1,3 +1,5 @@
+<?php include "utilities/connectToDB.php"?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
