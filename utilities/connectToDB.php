@@ -1,4 +1,5 @@
 <?php
+
 $con = mysqli_connect(
     "localhost",
     "root",
@@ -7,9 +8,8 @@ $con = mysqli_connect(
     3307
 );
 
-if(mysqli_connect_errno()) {
-    echo "MySQL failed " . mysqli_connect_errno();
-    exit();
+if(mysqli_connect_errno()){
+    echo "MySql failed: " . mysqli_connect_error();
 } else {
-    echo "DB is connected";
+    echo "DB is connnected";
 }
