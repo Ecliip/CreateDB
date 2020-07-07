@@ -13,6 +13,7 @@
 <h4 class="link__internal"><a href="create.php">Create</a></h4>
 <h4 class="link__internal"><a href="read.php">Read</a></h4>
 <h4 class="link__internal"><a href="update.php">Update</a></h4>
-<h4 class="link__internal">Delete</h4>
+<h4 class="link__internal"><a href="delete.php">Delete</a></h4>
+
 </body>
 </html>

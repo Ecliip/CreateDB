@@ -53,3 +53,16 @@ function updateRecord($username, $email){
     }
     return $result;
 }
+
+function deleteRecord($email){
+    global $con;
+    $result = mysqli_query(
+        $con,
+        "DELETE FROM users 
+                WHERE email = '$email'"
+    );
+    if(!result){
+        echo mysqli_error();
+    }
+    return $result;
+}
