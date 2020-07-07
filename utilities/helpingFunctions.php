@@ -26,3 +26,15 @@ function printData()
         echo "failed: " . mysqli_error();
     }
 }
+
+function loadSingleRecord($email){
+    global $con;
+    $result = mysqli_query(
+        $con,
+        "SELECT * FROM users WHERE email = '$email'"
+    );
+    if(!result){
+
+    }
+    return mysqli_fetch_assoc($result);
+}
