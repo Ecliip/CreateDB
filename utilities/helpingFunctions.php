@@ -38,3 +38,18 @@ function loadSingleRecord($email){
     }
     return mysqli_fetch_assoc($result);
 }
+
+function updateRecord($username, $email){
+    global $con;
+    echo "fun: ".$username ." ". $email;
+    $result = mysqli_query(
+        $con,
+        "UPDATE users 
+                SET user_name = '$username' 
+                WHERE email = '$email'"
+    );
+    if(!result){
+        echo "UPDATING failed: " . mysqli_error();
+    }
+    return $result;
+}
