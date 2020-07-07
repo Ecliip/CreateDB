@@ -9,7 +9,7 @@ $con = mysqli_connect(
 );
 
 if(mysqli_connect_errno()){
-    echo "MySql failed: " . mysqli_connect_error();
+    echo "MySql failed: <br>" . mysqli_connect_error();
 } else {
-    echo "DB is connnected";
+    echo "DB is connnected<br>";
 }
